@@ -8,6 +8,5 @@ table {
 	border-radius: 5px;
 }
 td {
-	padding-right: 20%;
-	padding-left: 20%;
+	padding: auto;
 }
