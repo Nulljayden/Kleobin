@@ -37,7 +37,7 @@ a {
 	margin-left: 0%;
 	margin-top: 5%;
 }
-indexBoxes {
+div {
 	display: flex;
 	flex-direction: row;
 }
