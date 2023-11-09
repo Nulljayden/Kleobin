@@ -9,6 +9,7 @@ table {
 }
 td {
 	padding: auto;
+	font-family: 'monospace', monaco;
 }
 button {
 	margin-left: 8%;
