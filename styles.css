@@ -37,3 +37,7 @@ a {
 	margin-left: 0%;
 	margin-top: 5%;
 }
+indexBoxes {
+	display: flex;
+	flex-direction: row;
+}
