@@ -1,7 +1,7 @@
 body {
 	background-color: rgb(80, 79, 79);
 }
-table {
+.titleBar {
 	border-width: 7px;
 	border-style: outset;
 	width: 65%;
@@ -29,4 +29,9 @@ button {
 a {
 	text-decoration: none;
 	color: black;
+}
+.textSquareOne {
+	background-color: white;
+	width: 40px;
+	height: 40px;
 }
