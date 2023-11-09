@@ -8,8 +8,9 @@ table {
 	border-radius: 5px;
 }
 td {
-	padding: auto;
+	padding: 20px;
 	font-family: "Arial", sans-serif;
+	border: 1px solid;
 }
 button {
 	margin-left: 8%;
