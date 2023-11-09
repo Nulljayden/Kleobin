@@ -11,8 +11,8 @@ td {
 	padding: auto;
 }
 button {
-	margin-left: 50%;
-	margin-top: 50%;
+	margin-left: auto;
+	margin-top: auto;
 	width: 20%;
 	height: 20%;
 }
