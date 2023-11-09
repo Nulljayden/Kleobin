@@ -32,8 +32,8 @@ a {
 }
 .textSquareOne {
 	background-color: white;
-	width: 20%;
-	height: 20%;
+	width: 100px;
+	height: 150px;
 	margin-left: 10%;
 	margin-top: 5%;
 }
