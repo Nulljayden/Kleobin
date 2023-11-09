@@ -9,7 +9,7 @@ table {
 	margin-left:auto;
 	margin-right: auto;
 	border-radius: 5px;
-	background-color: lightgray;
+	background-color: rgb(169 169 169);
 }
 td {
 	padding-right: 20px;
