@@ -4,11 +4,10 @@ body {
 table {
 	border-width: 7px;
 	border-style: outset;
-	width: 80%;
+	width: 60%;
 	text-align: center;
 	margin-left:auto;
 	margin-right: auto;
-	padding-top: 5px;
 	border-radius: 5px;
 	background-color: rgb(169 169 169);
 }
