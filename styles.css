@@ -14,7 +14,7 @@ td {
 	border: 1px solid;
 	border-style: inset;
 	border-width: 3px;
-	border-color: black;
+	border-color: lightgray;
 }
 button {
 	margin-left: 8%;
