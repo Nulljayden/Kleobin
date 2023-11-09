@@ -12,6 +12,7 @@ td {
 	padding-left: 20px
 	font-family: "Arial", sans-serif;
 	border: 1px solid;
+	border-style: insert;
 }
 button {
 	margin-left: 8%;
