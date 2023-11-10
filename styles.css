@@ -24,6 +24,12 @@ td {
 	width: 170px;
 	height: 60px;
 }
+.appButtons {
+	margin-left: 8%;
+	margin-top: 2%;
+	width: 170px;
+	height: 60px;
+}
 a {
 	text-decoration: none;
 	color: black;
