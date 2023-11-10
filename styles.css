@@ -34,8 +34,8 @@ a {
 	height: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;
-	border-radius: 10px;
+	border-width: 7px;
+	border-radius: 5px;
 	text-align: center;
 	font-size: 40px;
 }
@@ -45,7 +45,6 @@ a {
 	justify-content: center;
 }
 .indexBoxes2 {
-	display:flex;
 	align-items: center;
 }
 .homeButton {
