@@ -45,7 +45,7 @@ a {
 	justify-content: center;
 }
 .indexBoxes2 {
-	display: flex;
+	display: column;
 	align-items: center;
 }
 .homeButton {
