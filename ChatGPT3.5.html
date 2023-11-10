@@ -3,87 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chatbox</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        #chat-container {
-            max-width: 400px;
-            margin: 20px auto;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        #chat-box {
-            height: 300px;
-            overflow-y: scroll;
-            padding: 10px;
-        }
-
-        #user-input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-    </style>
+    <title>ChatGPT 3.5 Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <div id="chat-container">
         <div id="chat-box"></div>
         <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="userSendMessage()">Send</button>
     </div>
 
     <script>
-        const chatBox = document.getElementById('chat-box');
-        const userInput = document.getElementById('user-input');
+        const chatBox = $('#chat-box');
+        const userInput = $('#user-input');
 
         function appendMessage(sender, message) {
-            const newMessage = document.createElement('div');
-            newMessage.innerHTML = `<strong>${sender}:</strong> ${message}`;
-            chatBox.appendChild(newMessage);
-            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the bottom
+            const newMessage = `<strong>${sender}:</strong> ${message}`;
+            chatBox.append(`<div>${newMessage}</div>`);
+            chatBox.scrollTop(chatBox[0].scrollHeight);
         }
 
         async function userSendMessage() {
-            const message = userInput.value;
+            const message = userInput.val();
             if (message.trim() !== '') {
                 appendMessage('You', message);
 
-                // Call the OpenAI GPT-3 API to get the AI response
-                const aiResponse = await getAIResponse(message);
+                const apiKey = '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';
+                const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
-                appendMessage('AI', aiResponse.choices[0].text);
-                userInput.value = '';
+                try {
+                    const response = await $.ajax({
+                        type: 'POST',
+                        url: apiUrl,
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${apiKey}`
+                        },
+                        data: JSON.stringify({
+                            prompt: message,
+                            max_tokens: 100
+                        }),
+                        dataType: 'json'
+                    });
+
+                    appendMessage('AI', response.choices[0].text);
+                    userInput.val('');
+                } catch (error) {
+                    console.error('Error:', error);
+                    appendMessage('AI', 'An error occurred while processing your request.');
+                }
             }
         }
 
-        async function getAIResponse(userMessage) {
-            const apiKey = 'asst_svOXVjvGu90wtFRbZulK2kCl'; // Replace with your actual API key
-            const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
-
-            const response = await fetch(apiUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${apiKey}`
-                },
-                body: JSON.stringify({
-                    prompt: userMessage,
-                    max_tokens: 100
-                })
-            });
-
-            return await response.json();
-        }
-
-        // Example of handling Enter key press
-        userInput.addEventListener('keydown', function (event) {
+        userInput.on('keydown', function (event) {
             if (event.key === 'Enter') {
                 userSendMessage();
             }
