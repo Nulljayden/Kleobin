@@ -1,1 +1,1 @@
-alert("This is a confidential site, don't get caught!");
+window.confirm("By pressing "OK", you agree to keep this site confidential and not let it get exposed);
