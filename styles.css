@@ -38,6 +38,8 @@ a {
 	margin-right: auto;
 	margin-top: 5%;
 	border-radius: 10px;
+	text-align: center;
+	align-items: center;
 }
 .indexBoxes {
 	display: flex;
