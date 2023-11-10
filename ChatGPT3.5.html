@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #chat-container {
+            max-width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        #chat-box {
+            height: 300px;
+            overflow-y: scroll;
+            padding: 10px;
+        }
+
+        #user-input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+
+        function appendMessage(sender, message) {
+            const newMessage = document.createElement('div');
+            newMessage.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatBox.appendChild(newMessage);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the bottom
+        }
+
+        async function userSendMessage() {
+            const message = userInput.value;
+            if (message.trim() !== '') {
+                appendMessage('You', message);
+
+                // Call the OpenAI GPT-3 API to get the AI response
+                const aiResponse = await getAIResponse(message);
+
+                appendMessage('AI', aiResponse.choices[0].text);
+                userInput.value = '';
+            }
+        }
+
+        async function getAIResponse(userMessage) {
+            const apiKey = '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'; // Replace with your actual API key
+            const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
+
+            const response = await fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    prompt: userMessage,
+                    max_tokens: 100
+                })
+            });
+
+            return await response.json();
+        }
+
+        // Example of handling Enter key press
+        userInput.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                userSendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
