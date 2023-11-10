@@ -45,3 +45,7 @@ a {
 	display: flex;
 	flex-direction: row;
 }
+.homeButton {
+	width: 200px;
+	height: 200px;
+}
