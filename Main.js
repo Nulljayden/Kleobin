@@ -1,1 +1,1 @@
-window.confirm("By pressing "OK", you agree to keep this site confidential and not let it get exposed);
+window.confirm("By pressing OK, you agree to keep this site confidential and not let it get exposed");
