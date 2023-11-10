@@ -19,6 +19,13 @@ body {
 	border-color: rgb(94, 93, 93);
 	border-radius: 15px;
 }
+.gameButtonsdesc {
+	margin-left: 8%;
+	margin-top: 2%;
+	width: 170px;
+	height: 20px;
+	background-color: gray;
+}
 .gameButtons {
 	margin-left: 8%;
 	margin-top: 2%;
