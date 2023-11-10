@@ -38,6 +38,7 @@ a {
 	border-radius: 5px;
 	text-align: center;
 	font-size: 40px;
+	flex-direction: column;
 }
 .indexBoxes {
 	display:flex;
@@ -46,7 +47,6 @@ a {
 }
 .indexBoxes2 {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 }
 .homeButton {
