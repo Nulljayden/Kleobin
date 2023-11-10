@@ -9,7 +9,7 @@ body {
 	border-radius: 30px;
 	background-color: rgb(169 169 169);
 }
-td {
+.titleBarButton {
 	padding-right: 20px;
 	padding-left: 20px;
 	font-family: "Arial", sans-serif;
