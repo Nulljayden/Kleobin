@@ -50,7 +50,7 @@ body {
 	font-size: 13px;
 }
 .appButtonsAlignment {
-	align-items: Center;
+	align-content: Center;
 }
 .appButtons {
 	margin-left: auto;
