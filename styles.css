@@ -52,6 +52,7 @@ body {
 .appButtonsAlignment {
 	display: flex;
 	justify-content: space-evenly;
+	margin-top: 20px;
 }
 .appButtons {
 	margin-left: auto;
