@@ -60,7 +60,9 @@ body {
 	border:1px solid;
 	border-style: outset;
 	border-width: 7px;
+	border-radius: 30px;
 	border-color:  rgb(230, 230, 230);
+	margin: 0;
 }
 .appButtons {
 	margin-left: auto;
