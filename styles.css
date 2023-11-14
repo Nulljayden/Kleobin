@@ -25,6 +25,10 @@ body {
 	width: 170px;
 	height: 20px;
 	background-color: rgb(245 73 73);
+	border-style: outset;
+	border-width: 3px;
+	border-color: rgb(213 43 43);
+	border-radius: 30px;
 }
 .gameButtons {
 	margin-left: 8%;
