@@ -49,6 +49,9 @@ body {
 .appButtonsDesc {
 	font-size: 13px;
 }
+.appButtonsAlignment {
+	align-items: Center;
+}
 .appButtons {
 	margin-left: auto;
 	margin-right: auto;
