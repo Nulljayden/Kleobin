@@ -55,14 +55,13 @@ body {
 	margin-top: 20px;
 }
 .appButtonImg {
-	width: 235px;
+	width: auto;
 	height: 90px;
 	border:1px solid;
 	border-style: outset;
 	border-width: 7px;
 	border-radius: 30px;
 	border-color:  rgb(230, 230, 230);
-	margin-right: 15px;
 }
 .appButtons {
 	margin-left: auto;
