@@ -54,6 +54,7 @@ body {
 	border-color: rgb(170, 170, 170);
 	border-radius: 30px;
 	height: 60px;
+	list-style: none;
 }
 a {
 	text-decoration: none;
