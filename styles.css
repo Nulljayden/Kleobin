@@ -51,7 +51,7 @@ body {
 }
 .appButtonsAlignment {
 	display: flex;
-	align-content: Center;
+	align-items: Center;
 }
 .appButtons {
 	margin-left: auto;
