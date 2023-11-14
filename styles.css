@@ -15,7 +15,7 @@ body {
 	padding-left: 20px;
 	font-family: "Arial", sans-serif;
 	border: 1px solid;
-	border-style: inset;
+	border-style: outset;
 	border-width: 7px;
 	border-color: rgb(213 43 43);
 	border-radius: 30px;
@@ -25,6 +25,10 @@ body {
 	width: 170px;
 	height: 20px;
 	background-color: rgb(245 73 73);
+	border-style: outset;
+	border-width: 3px;
+	border-color: rgb(213 43 43);
+	border-radius: 15px;
 }
 .gameButtons {
 	margin-left: 8%;
@@ -33,7 +37,7 @@ body {
 	height: 60px;
 	background-color: rgb(230, 230, 230);
 	border: 1px solid;
-	border-style: inset;
+	border-style: outset;
 	border-width: 7px;
 	border-color: rgb(170, 170, 170);
 	border-radius: 30px;
@@ -46,7 +50,7 @@ body {
 	height: 60px;
 	background-color: rgb(230, 230, 230);
 	border: 1px solid;
-	border-style: inset;
+	border-style: outset;
 	border-width: 7px;
 	border-color: rgb(170, 170, 170);
 	border-radius: 30px;
