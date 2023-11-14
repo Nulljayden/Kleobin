@@ -62,6 +62,7 @@ body {
 	border-width: 7px;
 	border-radius: 30px;
 	border-color:  rgb(230, 230, 230);
+	background-color: white;
 }
 .appButtons {
 	margin-left: auto;
