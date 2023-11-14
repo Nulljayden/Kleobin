@@ -23,7 +23,7 @@ body {
 	margin-left: 8%;
 	width: 170px;
 	height: 20px;
-	background-color: rgb(213 43 43);
+	background-color: rgb(255 255 255);
 }
 .gameButtons {
 	margin-left: 8%;
@@ -39,10 +39,10 @@ body {
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 .textSquareOne {
-	background-color: rgb(169 169 169);
+	background-color: rgb(255, 255, 255);
 	width: 600px;
 	height: 700px;
 	margin-left: auto;
