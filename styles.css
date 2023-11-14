@@ -42,9 +42,12 @@ body {
 	border-color: rgb(170, 170, 170);
 	border-radius: 30px;
 }
-.appButtonsdesc {
+.appButtonsTitle {
 	margin-bottom: 10px;
 	font-size: 20px;
+}
+.appButtonsDesc {
+	font-size: 12px;
 }
 .appButtons {
 	margin-left: 8%;
