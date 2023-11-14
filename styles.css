@@ -43,7 +43,6 @@ body {
 	border-radius: 30px;
 }
 .appButtons {
-	display: flex;
 	margin-left: 8%;
 	margin-top: 2%;
 	width: 170px;
