@@ -30,10 +30,11 @@ body {
 	margin-top: 2%;
 	width: 170px;
 	height: 60px;
+	background-color: rgb(230, 230, 230);
 	border: 1px solid;
 	border-style: inset;
 	border-width: 4px;
-	border-color: rgb(213 43 43);
+	border-color: rgb(170, 170, 170);
 	border-radius: 15px;
 }
 .appButtons {
