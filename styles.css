@@ -50,6 +50,7 @@ body {
 	font-size: 13px;
 }
 .appButtonsAlignment {
+	display: flex;
 	align-content: Center;
 }
 .appButtons {
