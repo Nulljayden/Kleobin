@@ -56,12 +56,11 @@ body {
 }
 .appButtonImg {
 	width: 235px;
-	height: 70px;
+	height: 90px;
 	border:1px solid;
 	border-style: outset;
 	border-width: 7px;
 	border-color:  rgb(230, 230, 230);
-	border-radius: 30px;
 }
 .appButtons {
 	margin-left: auto;
