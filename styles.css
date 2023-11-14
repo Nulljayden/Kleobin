@@ -42,10 +42,6 @@ body {
 	border-color: rgb(170, 170, 170);
 	border-radius: 30px;
 }
-.appButtonsdesc {
-	display: flex;
-	flex-direction: column;
-}
 .appButtons {
 	margin-left: 8%;
 	margin-top: 2%;
