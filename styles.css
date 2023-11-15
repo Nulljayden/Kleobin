@@ -2,7 +2,7 @@ body {
 	background-color: rgb(101, 22, 22);
 	margin: 5px; /* Add some margin to the body to make the outline visible */
     border: 25px solid rgb(77, 10, 10); /* Set border properties for the body */
-    padding: 5px; /* Add padding to the body to separate content from the border */
+    padding: 8px; /* Add padding to the body to separate content from the border */
 	box-shadow: 5px 5px 0 0 rgb(39, 2, 3); /* Create an offset effect using box-shadow */
 	border-style: double;
 }
