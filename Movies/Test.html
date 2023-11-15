@@ -1,52 +1,42 @@
-URL: https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyASH-M0MnDVDa4qfQNc_14KBVt-5z2x4ac
-     &part=snippet,contentDetails,statistics,status
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>YouTube API Example</title>
+   <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
 
-Description: This example retrieves a video resource and identifies several
-             resource parts that should be included in the API response.
+   <h1>YouTube API Example</h1>
 
-API response:
+   <script>
+      // Replace YOUR_API_KEY with your actual API key
+      var apiKey = 'AIzaSyASH-M0MnDVDa4qfQNc_14KBVt-5z2x4ac';
 
-{ 
- "kind": "youtube#videoListResponse",
- "etag": "\"UCBpFjp2h75_b92t44sqraUcyu0/sDAlsG9NGKfr6v5AlPZKSEZdtqA\"",
- "videos": [
-  {
-   "id": "7lCDEYXw3mM",
-   "kind": "youtube#video",
-   "etag": "\"UCBpFjp2h75_b92t44sqraUcyu0/iYynQR8AtacsFUwWmrVaw4Smb_Q\"",
-   "snippet": { 
-    "publishedAt": "2012-06-20T22:45:24.000Z",
-    "channelId": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
-    "title": "Google I/O 101: Q&A On Using Google APIs",
-    "description": "Antonio Fuentes speaks to us and takes questions on working with Google APIs and OAuth 2.0.",
-    "thumbnails": {
-     "default": {
-      "url": "https://i.ytimg.com/vi/7lCDEYXw3mM/default.jpg"
-     },
-     "medium": {
-      "url": "https://i.ytimg.com/vi/7lCDEYXw3mM/mqdefault.jpg"
-     },
-     "high": {
-      "url": "https://i.ytimg.com/vi/7lCDEYXw3mM/hqdefault.jpg"
-     }
-    },
-    "categoryId": "28"
-   },
-   "contentDetails": {
-    "duration": "PT15M51S",
-    "aspectRatio": "RATIO_16_9"
-   },
-   "statistics": {
-    "viewCount": "3057",
-    "likeCount": "25",
-    "dislikeCount": "0",
-    "favoriteCount": "17",
-    "commentCount": "12"
-   },
-   "status": {
-    "uploadStatus": "STATUS_PROCESSED",
-    "privacyStatus": "PRIVACY_PUBLIC"
-   }
-  }
- ]
-}
+      function getVideoDetails() {
+         var videoId = 'VIDEO_ID';
+
+         gapi.client.youtube.videos.list({
+            part: 'snippet',
+            id: videoId
+         }).then(function (response) {
+            var videoDetails = response.result.items[0].snippet;
+            // Use the video details to update your HTML elements
+            console.log(videoDetails);
+         }, function (err) {
+            console.error('Error loading video details', err);
+         });
+      }
+
+      // Load the YouTube API client library
+      gapi.load('client', function () {
+         gapi.client.init({
+            'apiKey': apiKey,
+            'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
+         }).then(getVideoDetails);
+      });
+   </script>
+
+</body>
+</html>
