@@ -79,11 +79,11 @@ body {
 	margin-top: 2%;
 	width: 235px;
 	height: 190px;
-	background-color: rgb(238, 173, 52);
+	background-color: rgb(255, 191, 73);
 	border: 1px solid;
 	border-style: outset;
 	border-width: 7px;
-	border-color: rgb(192, 119, 24);
+	border-color: rgb(204, 144, 67);
 	border-radius: 30px;
 	list-style: none;
 	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
