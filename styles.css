@@ -3,7 +3,7 @@ body {
 	margin: 20px; /* Add some margin to the body to make the outline visible */
     border: 25px; /* Set border properties for the body */
 	border-color: rgb(71, 10, 10);
-    padding: 0px; /* Add padding to the body to separate content from the border */
+    padding: 5px; /* Add padding to the body to separate content from the border */
 }
 .titleBar {
 	border-width: 7px;
