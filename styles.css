@@ -1,7 +1,7 @@
 body {
 	background-color: rgb(101, 22, 22);
 	margin: 5px; /* Add some margin to the body to make the outline visible */
-    border: 25px solid white; /* Set border properties for the body */
+    border: 25px solid rgb(77, 10, 10); /* Set border properties for the body */
     padding: 5px; /* Add padding to the body to separate content from the border */
 }
 .titleBar {
