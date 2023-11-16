@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chat Box Example</title>
+    <title>Tab Hider</title>
     <script>
         function saveInput() {
             var userInput = document.getElementById("chat-input").value;
             console.log("User input: " + userInput);
-            window.open(userInput, "_blank");
+            window.open(userInput);
         }
     </script>
 </head>
 <body>
     <h1>Chat Box Example</h1>
-    <input type="text" id="chat-input" placeholder="Type your message here">
+    <input type="text" id="chat-input" placeholder="Type your link here">
     <button onclick="saveInput()">Send</button>
 </body>
 </html>
