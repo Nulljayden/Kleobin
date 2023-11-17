@@ -134,8 +134,10 @@ a {
 	height: 50px;
 	margin-right: 20px;
 }
-.widgetBot {
+.widgetBotAlignment {
 	align-items: center;
 	justify-content: center;
+}
+.widgetBot {
 	margin-top: 20px;
 }
