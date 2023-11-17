@@ -137,6 +137,8 @@ a {
 .widgetBotAlignment {
 	align-items: center;
 	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
 }
 .widgetBot {
 	margin-top: 20px;
