@@ -142,4 +142,5 @@ a {
 .widgetBot {
 	margin-top: 20px;
 	border-width: 10px;
+	border-style: double;
 }
