@@ -141,8 +141,7 @@ a {
 }
 .widgetBot {
 	margin-top: 20px;
-	border: 25px solid rgb(77, 10, 10);
-	border-style: double;
+	border: 8px solid rgb(77, 10, 10);
 	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
 	background-color: rgb(101, 22, 22);
 }
