@@ -1,147 +1,162 @@
 body {
-	background-color: rgb(101, 22, 22);
-	margin: 5px; 
-    border: 25px solid rgb(77, 10, 10); 
-    padding: 8px; 
-	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
-	border-style: double;
+  background-color: rgb(101, 22, 22);
+  margin: 5px;
+  border: 25px solid rgb(77, 10, 10);
+  padding: 8px;
+  box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
+  border-style: double;
 }
 .titleBar {
-	border-width: 7px;
-	border-style: outset;
-	width: 65%;
-	text-align: center;
-	border-radius: 30px;
-	background-color: rgb(245 73 73);
-	border-color: rgb(213 43 43);
-	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
+  border-width: 7px;
+  border-style: outset;
+  width: 65%;
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgb(245 73 73);
+  border-color: rgb(213 43 43);
+  box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
 }
 
 .titleBarButton {
-	padding-right: 20px;
-	padding-left: 20px;
-	font-family: "Arial", sans-serif;
-	border: 1px solid;
-	border-style: outset;
-	border-width: 7px;
-	border-color: rgb(213 43 43);
-	border-radius: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: "Arial", sans-serif;
+  border: 1px solid;
+  border-style: outset;
+  border-width: 7px;
+  border-color: rgb(213 43 43);
+  border-radius: 30px;
 }
 .appButtonsTitle {
-	margin-bottom: 10px;
-	font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 .appButtonsDesc {
-	font-size: 13px;
+  font-size: 13px;
 }
 .appButtonsAlignment {
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 .appButtonImg {
-	width: 190px;
-	height: 80px;
-	border:1px solid;
-	border-style: outset;
-	border-width: 7px;
-	border-radius: 30px;
-	border-color:  rgb(170, 170, 170);
-	background-color: white;
+  width: 190px;
+  height: 80px;
+  border: 1px solid;
+  border-style: outset;
+  border-width: 7px;
+  border-radius: 30px;
+  border-color: rgb(170, 170, 170);
+  background-color: white;
 }
 .movieButtonImg {
-	width: 190px;
-	height: 110px;
-	border:1px solid;
-	border-style: outset;
-	border-width: 7px;
-	border-radius: 30px;
-	border-color:  rgb(170, 170, 170);
-	background-color: white;
+  width: 190px;
+  height: 110px;
+  border: 1px solid;
+  border-style: outset;
+  border-width: 7px;
+  border-radius: 30px;
+  border-color: rgb(170, 170, 170);
+  background-color: white;
 }
 .appButtons {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2%;
-	width: 235px;
-	height: 190px;
-	background-color: rgb(230, 230, 230);
-	border: 1px solid;
-	border-style: outset;
-	border-width: 7px;
-	border-color: rgb(170, 170, 170);
-	border-radius: 30px;
-	list-style: none;
-	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 235px;
+  height: 190px;
+  background-color: rgb(230, 230, 230);
+  border: 1px solid;
+  border-style: outset;
+  border-width: 7px;
+  border-color: rgb(170, 170, 170);
+  border-radius: 30px;
+  list-style: none;
+  box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
 }
-	.appButtonsPopular {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2%;
-	width: 235px;
-	height: 190px;
-	background-color: rgb(255, 191, 73);
-	border: 1px solid;
-	border-style: outset;
-	border-width: 7px;
-	border-color: rgb(204, 144, 67);
-	border-radius: 30px;
-	list-style: none;
-	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
+.appButtonsPopular {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 235px;
+  height: 190px;
+  background-color: rgb(255, 191, 73);
+  border: 1px solid;
+  border-style: outset;
+  border-width: 7px;
+  border-color: rgb(204, 144, 67);
+  border-radius: 30px;
+  list-style: none;
+  box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
+}
+.appButtonsUnfinished {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 235px;
+  height: 190px;
+  background-color: rgb(80, 80, 80);
+  border: 1px solid;
+  border-style: outset;
+  border-width: 7px;
+  border-color: rgb(43, 43, 43);
+  border-radius: 30px;
+  list-style: none;
+  box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
 }
 .appButtonsScratch {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2%;
-	width: 235px;
-	height: 190px;
-	background-color: rgb(205, 97, 255);
-	border: 1px solid;
-	border-style: outset;
-	border-width: 7px;
-	border-color: rgb(127, 43, 160);
-	border-radius: 30px;
-	list-style: none;
-	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 235px;
+  height: 190px;
+  background-color: rgb(205, 97, 255);
+  border: 1px solid;
+  border-style: outset;
+  border-width: 7px;
+  border-color: rgb(127, 43, 160);
+  border-radius: 30px;
+  list-style: none;
+  box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
 }
 a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 .textSquareOne {
-	background-color: rgb(245 73 73);
-	width: 600px;
-	height: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5%;
-	border-width: 7px;
-	border-radius: 5px;
-	text-align: center;
-	font-size: 40px;
+  background-color: rgb(245 73 73);
+  width: 600px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border-width: 7px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 40px;
 }
 .indexBoxes {
-	display:flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .indexBoxes2 {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .homeButton {
-	width: 50px;
-	height: 50px;
-	margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
 .widgetBotAlignment {
-	align-items: center;
-	justify-content: center;
-	display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .widgetBot {
-	margin-top: 20px;
-	border: 8px solid rgb(77, 10, 10);
-	box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
-	background-color: rgb(101, 22, 22);
+  margin-top: 20px;
+  border: 8px solid rgb(77, 10, 10);
+  box-shadow: 5px 5px 0 0 rgb(39, 2, 3);
+  background-color: rgb(101, 22, 22);
 }
